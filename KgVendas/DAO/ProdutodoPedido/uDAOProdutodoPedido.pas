@@ -163,13 +163,12 @@ begin
      Qry.SQL.ADD('where p.nu_pedido =  ' + inttostr(NumeroProdutodoPedido))
   else
   if NumeroPedido > 0  then
-     Qry.SQL.ADD('where p.nu_produtodopedido =  ' + inttostr(NumeroPedido))
+     Qry.SQL.ADD('where p.nu_pedido =  ' + inttostr(NumeroPedido))
   else
   if CodigoProduto > 0  then
      Qry.SQL.ADD('where p.co_produto =  ' + inttostr(CodigoProduto));
 
   Qry.SQL.ADD('group by  p.nu_produtodopedido');
-
   Try
     Qry.Open;
     Qry.FieldDefs.Update;
