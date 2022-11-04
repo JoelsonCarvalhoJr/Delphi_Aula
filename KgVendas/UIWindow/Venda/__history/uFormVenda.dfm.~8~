@@ -1,0 +1,556 @@
+inherited FormVenda: TFormVenda
+  Caption = 'Cadatro de Vendas'
+  ClientHeight = 936
+  ClientWidth = 1456
+  KeyPreview = True
+  OnActivate = FormActivate
+  ExplicitTop = -172
+  ExplicitWidth = 1472
+  ExplicitHeight = 975
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited PageControl2: TPageControl
+    Width = 1456
+    Height = 936
+    ExplicitWidth = 1456
+    ExplicitHeight = 936
+    inherited TabSheet1: TTabSheet
+      ExplicitWidth = 1448
+      ExplicitHeight = 902
+      inherited Panel2: TPanel
+        Width = 1448
+        Height = 902
+        ExplicitWidth = 1448
+        ExplicitHeight = 902
+        inherited Panel3: TPanel
+          Top = 953
+          Width = 59
+          Height = 1
+          Visible = False
+          ExplicitTop = 953
+          ExplicitWidth = 59
+          ExplicitHeight = 1
+          inherited BtnGravar: TBitBtn
+            Width = 49
+            ExplicitWidth = 49
+          end
+          inherited BtnCancelar: TBitBtn
+            Width = 49
+            ExplicitWidth = 49
+          end
+          inherited BtnAlterar: TBitBtn
+            Width = 49
+            ExplicitWidth = 49
+          end
+          inherited BtnIncluir: TBitBtn
+            Width = 49
+            ExplicitWidth = 49
+          end
+          inherited BtnSair: TBitBtn
+            Top = -36
+            Width = 49
+            ExplicitTop = -36
+            ExplicitWidth = 49
+          end
+          inherited BtnExcluir: TBitBtn
+            Width = 49
+            ExplicitWidth = 49
+          end
+        end
+        object Panel1: TPanel
+          Left = 1
+          Top = 1
+          Width = 1442
+          Height = 952
+          Align = alTop
+          BorderStyle = bsSingle
+          TabOrder = 1
+          object Panel4: TPanel
+            Left = 1
+            Top = 1
+            Width = 1436
+            Height = 41
+            Align = alTop
+            BorderWidth = 3
+            BorderStyle = bsSingle
+            Caption = 'Pedido de venda'
+            Color = clScrollBar
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -32
+            Font.Name = 'Times New Roman'
+            Font.Style = []
+            ParentBackground = False
+            ParentFont = False
+            TabOrder = 0
+          end
+          object Panel6: TPanel
+            Left = 1
+            Top = 42
+            Width = 1436
+            Height = 311
+            Align = alTop
+            BorderStyle = bsSingle
+            TabOrder = 1
+            object Label3: TLabel
+              Left = 3
+              Top = 3
+              Width = 49
+              Height = 19
+              Caption = 'Produto'
+            end
+            object Label7: TLabel
+              Left = 474
+              Top = 3
+              Width = 74
+              Height = 19
+              Caption = 'Valor Venda'
+            end
+            object Label6: TLabel
+              Left = 572
+              Top = 3
+              Width = 70
+              Height = 19
+              Caption = 'Quanitdade'
+            end
+            object Label5: TLabel
+              Left = 674
+              Top = 3
+              Width = 84
+              Height = 19
+              Caption = 'Valor Unit'#225'rio'
+            end
+            object ed_co_produto: TEdit
+              Left = 3
+              Top = 23
+              Width = 71
+              Height = 27
+              Alignment = taCenter
+              MaxLength = 240
+              TabOrder = 0
+              OnEnter = ed_co_produtoEnter
+              OnExit = ed_co_produtoExit
+              OnKeyDown = ed_co_produtoKeyDown
+              OnKeyPress = ed_co_produtoKeyPress
+            end
+            object ed_no_produto: TEdit
+              Left = 77
+              Top = 24
+              Width = 391
+              Height = 27
+              Enabled = False
+              TabOrder = 1
+              OnExit = ed_no_produtoExit
+            end
+            object ed_nu_valor_venda: TEdit
+              Left = 477
+              Top = 23
+              Width = 71
+              Height = 27
+              Alignment = taRightJustify
+              Enabled = False
+              MaxLength = 240
+              TabOrder = 2
+            end
+            object ed_nu_quantidade: TEdit
+              Left = 572
+              Top = 23
+              Width = 70
+              Height = 27
+              Alignment = taRightJustify
+              MaxLength = 240
+              TabOrder = 3
+              OnExit = ed_nu_quantidadeExit
+            end
+            object ed_nu_valorunitario: TEdit
+              Left = 659
+              Top = 23
+              Width = 105
+              Height = 27
+              Alignment = taRightJustify
+              MaxLength = 240
+              TabOrder = 4
+              OnExit = ed_nu_valorunitarioExit
+            end
+            object Panel5: TPanel
+              Left = 772
+              Top = 8
+              Width = 445
+              Height = 51
+              BorderStyle = bsSingle
+              TabOrder = 5
+              object BtnConfirmar: TBitBtn
+                Left = 6
+                Top = 7
+                Width = 131
+                Height = 32
+                Hint = 'Inluir novo registro'
+                Caption = 'Incluir Pedido'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clNavy
+                Font.Height = -16
+                Font.Name = 'Times New Roman'
+                Font.Style = []
+                Glyph.Data = {
+                  42010000424D4201000000000000760000002800000011000000110000000100
+                  040000000000CC00000000000000000000001000000010000000000000000000
+                  BF0000BF000000BFBF00BF000000BF00BF00BFBF0000C0C0C000808080000000
+                  FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00777777777777
+                  7777700000007777777777777777700000007777777774F77777700000007777
+                  7777444F77777000000077777774444F777770000000700000444F44F7777000
+                  000070FFF444F0744F777000000070F8884FF0774F777000000070FFFFFFF077
+                  74F77000000070F88888F077774F7000000070FFFFFFF0777774F000000070F8
+                  8777F07777774000000070FFFF00007777777000000070F88707077777777000
+                  000070FFFF007777777770000000700000077777777770000000777777777777
+                  777770000000}
+                ParentFont = False
+                TabOrder = 0
+                OnClick = BtnConfirmarClick
+              end
+              object BtnGravarPedido: TBitBtn
+                Left = 143
+                Top = 7
+                Width = 130
+                Height = 32
+                Caption = 'Gravar Venda'
+                Enabled = False
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clNavy
+                Font.Height = -16
+                Font.Name = 'Times New Roman'
+                Font.Style = []
+                Glyph.Data = {
+                  DE010000424DDE01000000000000760000002800000024000000120000000100
+                  0400000000006801000000000000000000001000000000000000000000000000
+                  80000080000000808000800000008000800080800000C0C0C000808080000000
+                  FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00666666666666
+                  6666666666666666666666660000666666666666666666666666666666666666
+                  0000666000000000000066666888888888888866000066044074477704406666
+                  88887FF77788886600006604407447770440666688887FF77788886600006604
+                  407447770440666688887FF77788886600006604447777774440666688887777
+                  7788886600006604444444444440666688888888888888660000660440000000
+                  044066668888888888888866000066040FFFFFFFF0406666888FFFFFFFF88866
+                  000066040FFFFFFFF0406666888FFFFFFFF88866000066040F888888F0406666
+                  888F888888F88866000066040FFFFFFFF0406666888FFFFFFFF8886600006607
+                  0F888888F0006666878F888888F88866000066040FFFFFFFF0406666888FFFFF
+                  FFF8886600006600000000000000666688888888888888660000666666666666
+                  6666666666666666666666660000666666666666666666666666666666666666
+                  0000}
+                NumGlyphs = 2
+                ParentFont = False
+                TabOrder = 1
+                OnClick = BtnGravarPedidoClick
+              end
+            end
+            object SgPedidoVenda: TStringGrid
+              Left = 1
+              Top = 80
+              Width = 1430
+              Height = 185
+              Align = alBottom
+              RowCount = 2
+              TabOrder = 6
+              OnKeyDown = SgPedidoVendaKeyDown
+              ColWidths = (
+                64
+                64
+                64
+                64
+                64)
+              RowHeights = (
+                24
+                24)
+            end
+            object PnlValorTotal: TPanel
+              Left = 1
+              Top = 265
+              Width = 1430
+              Height = 41
+              Align = alBottom
+              BorderStyle = bsSingle
+              Caption = 'Valot total do pedido: 0,00'
+              Color = clGradientInactiveCaption
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -32
+              Font.Name = 'Times New Roman'
+              Font.Style = []
+              ParentBackground = False
+              ParentFont = False
+              TabOrder = 7
+            end
+          end
+          object Panel7: TPanel
+            Left = 1
+            Top = 353
+            Width = 1436
+            Height = 196
+            Align = alTop
+            BorderStyle = bsSingle
+            TabOrder = 2
+            object Label2: TLabel
+              Left = 12
+              Top = 60
+              Width = 42
+              Height = 19
+              Caption = 'Cliente'
+            end
+            object ed_co_cliente: TEdit
+              Left = 60
+              Top = 57
+              Width = 85
+              Height = 27
+              Alignment = taCenter
+              Enabled = False
+              MaxLength = 240
+              TabOrder = 0
+              OnClick = ed_co_clienteClick
+              OnExit = ed_co_clienteExit
+              OnKeyPress = ed_co_clienteKeyPress
+            end
+            object ed_no_cliente: TEdit
+              Left = 151
+              Top = 57
+              Width = 491
+              Height = 27
+              Enabled = False
+              MaxLength = 200
+              TabOrder = 1
+              OnClick = ed_no_clienteClick
+              OnExit = ed_no_clienteExit
+            end
+            object SgCliente: TStringGrid
+              Left = 1
+              Top = 90
+              Width = 1430
+              Height = 101
+              Align = alBottom
+              RowCount = 2
+              TabOrder = 2
+              OnClick = SgClienteClick
+              ColWidths = (
+                64
+                64
+                64
+                64
+                64)
+              RowHeights = (
+                24
+                24)
+            end
+            object Panel8: TPanel
+              Left = 1
+              Top = 1
+              Width = 1430
+              Height = 41
+              Align = alTop
+              BorderWidth = 3
+              BorderStyle = bsSingle
+              Caption = 'Cliente'
+              Color = clScrollBar
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -32
+              Font.Name = 'Times New Roman'
+              Font.Style = []
+              ParentBackground = False
+              ParentFont = False
+              TabOrder = 3
+            end
+          end
+          object Panel9: TPanel
+            Left = 1
+            Top = 549
+            Width = 1436
+            Height = 398
+            Align = alClient
+            TabOrder = 3
+            object Panel10: TPanel
+              Left = 1
+              Top = 1
+              Width = 1434
+              Height = 41
+              Align = alTop
+              BorderWidth = 3
+              BorderStyle = bsSingle
+              Caption = 'Venda'
+              Color = clScrollBar
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -32
+              Font.Name = 'Times New Roman'
+              Font.Style = []
+              ParentBackground = False
+              ParentFont = False
+              TabOrder = 0
+            end
+            object SgDadosGerais: TStringGrid
+              Left = 1
+              Top = 97
+              Width = 765
+              Height = 300
+              Align = alLeft
+              RowCount = 2
+              TabOrder = 1
+              OnClick = SgDadosGeraisClick
+              ColWidths = (
+                64
+                64
+                64
+                64
+                64)
+              RowHeights = (
+                24
+                24)
+            end
+            object SgProdutodoPedido: TStringGrid
+              Left = 776
+              Top = 97
+              Width = 659
+              Height = 300
+              Align = alClient
+              RowCount = 2
+              TabOrder = 2
+              OnClick = SgClienteClick
+              ColWidths = (
+                64
+                64
+                64
+                64
+                64)
+              RowHeights = (
+                24
+                24)
+            end
+            object Panel11: TPanel
+              Left = 766
+              Top = 97
+              Width = 10
+              Height = 300
+              Align = alLeft
+              Color = clGray
+              ParentBackground = False
+              TabOrder = 3
+            end
+            object Panel12: TPanel
+              Left = 1
+              Top = 42
+              Width = 1434
+              Height = 55
+              Align = alTop
+              BorderWidth = 3
+              BorderStyle = bsSingle
+              Color = clScrollBar
+              Font.Charset = ANSI_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -16
+              Font.Name = 'Times New Roman'
+              Font.Style = []
+              ParentBackground = False
+              ParentFont = False
+              TabOrder = 4
+              object Label1: TLabel
+                Left = 8
+                Top = 15
+                Width = 120
+                Height = 19
+                Caption = 'N'#250'mero do Pedido:'
+              end
+              object BtnCancelarPedido: TBitBtn
+                Left = 246
+                Top = 10
+                Width = 137
+                Height = 32
+                Caption = 'Cancelar Pedido'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clNavy
+                Font.Height = -16
+                Font.Name = 'Times New Roman'
+                Font.Style = []
+                Glyph.Data = {
+                  DE010000424DDE01000000000000760000002800000024000000120000000100
+                  0400000000006801000000000000000000001000000010000000000000000000
+                  80000080000000808000800000008000800080800000C0C0C000808080000000
+                  FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00666666666666
+                  6666666666666666666666660000666666666666666666666666666666666666
+                  0000666666111116666666666666888886666666000066661199999116666666
+                  6688888888866666000066619999999991666666688888888888666600006619
+                  99999999991666668888888888888666000066199FF999FF9916666688866888
+                  66888666000061999FFF9FFF9991666888866686668888660000619999FFFFF9
+                  99916668888866666888886600006199999FFF99999166688888866688888866
+                  0000619999FFFFF9999166688888666668888866000061999FFF9FFF99916668
+                  8886668666888866000066199FF999FF99166666888668886688866600006619
+                  9999999999166666888888888888866600006661999999999166666668888888
+                  8888666600006666119999911666666666888888888666660000666666111116
+                  6666666666668888866666660000666666666666666666666666666666666666
+                  0000}
+                NumGlyphs = 2
+                ParentFont = False
+                TabOrder = 0
+                OnClick = BtnCancelarPedidoClick
+              end
+              object btncarregarPedido: TBitBtn
+                Left = 389
+                Top = 10
+                Width = 137
+                Height = 32
+                Caption = 'Carregar Pedido'
+                Font.Charset = ANSI_CHARSET
+                Font.Color = clNavy
+                Font.Height = -16
+                Font.Name = 'Times New Roman'
+                Font.Style = []
+                Glyph.Data = {
+                  36030000424D3603000000000000360000002800000010000000100000000100
+                  18000000000000030000120B0000120B00000000000000000000FF00FF1693CA
+                  1693CA1693CAFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+                  FFFF00FFFF00FFFF00FFFF00FF1693CA67E1F44CCBEA30B0DC2DABD91C9CD00B
+                  8AC70684C2FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF1693CA
+                  7DF3FC77EFFA6FE9F665E1F35CD9F252CEED37B7E029AADA1B9DD00D8FC91C9D
+                  D1FF00FFFF00FFFF00FFFF00FF1693CA84F8FE7DF4FC75EEF86BE6F663DEF359
+                  D7EF51D0ED4ACAEA45C6E948C7EA3FBFE526A6D81693CAFF00FFFF00FF1693CA
+                  88FBFF82FAFE7BF3FB74EBF86BE5F662DDF258D5EF4AC6D84AC9EA45C5E945C5
+                  E93ABAE31693CAFF00FFFF00FF1693CA88FBFF87FBFF82F7FC7BF0FB73EBF869
+                  E3F660DAF20156033BB4B149C7EA45C5E93FBFE61693CAFF00FFFF00FF1693CA
+                  88FBFF87FBFF87FBFF82F7FE7AF0FB72EAF868E2F459D5E30156034ECCED48C7
+                  EA42C2E71693CAFF00FFFF00FF1693CA87FBFF87FBFF87FBFF86FBFF80F6FC78
+                  EFFB6FE9F766E1F20472090156034DCCEB45C5E71693CAFF00FFFF00FF1693CA
+                  8CFCFF87FBFF87FBFF3DAA7503640680F4FC78EFFB78EFFB047B0A01560354D0
+                  ED4BCAE91693CAFF00FFFF00FF1693CAC5F6FBADFAFE8BDCCA046A09046A0980
+                  F3F478EFFB036406047F0A0156035AD7F050CEED1693CAFF00FFFF00FF1693CA
+                  1C9CD01C9CD001560324A942035A08035A0803640606910E01560303640663DE
+                  F357D4EE1693CAFF00FFFF00FF1693CA58DCEE31A9990C751843E17726B44316
+                  A4290A9A16036E0701560374EDFA6BE3F65DD9F01693CAFF00FFFF00FF1693CA
+                  88FFFF01560337CA633EDE6D23BC4101560301560301560384EEFC7BF2FC73EB
+                  F868E0F31693CAFF00FFFF00FF1693CA90FFFF53CBA3015603199C2E129F2401
+                  56035AA481A6DCEF9FD7ED87D4EB8EDEF06BD8EF1693CAFF00FFFF00FF1693CA
+                  70E0F08CF6FB76E3D71E84370974120156030156031290C91693CA1693CA1693
+                  CA1693CA1693CAFF00FFFF00FFFF00FF1693CA1693CA1693CA1693CA1693CAFF
+                  00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF}
+                ParentFont = False
+                TabOrder = 1
+                OnClick = btncarregarPedidoClick
+              end
+              object ed_nu_pedido: TEdit
+                Left = 139
+                Top = 11
+                Width = 71
+                Height = 27
+                MaxLength = 240
+                TabOrder = 2
+                OnExit = ed_nu_pedidoExit
+                OnKeyDown = ed_nu_pedidoKeyDown
+                OnKeyPress = ed_nu_pedidoKeyPress
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 862
+    Top = 209
+  end
+end
